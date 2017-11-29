@@ -1,0 +1,12 @@
+/.idea
+*.log
+*.properties
+*.iml
+target
+*/target
+/*.war
+/*.zip
+/*.jar
+/.project
+/.settings
+*/.externalToolBuilders
