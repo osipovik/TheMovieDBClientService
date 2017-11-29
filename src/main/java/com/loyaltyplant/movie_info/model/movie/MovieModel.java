@@ -32,6 +32,7 @@ public class MovieModel implements Serializable {
     private String originalLanguage;
     @JsonProperty("original_title")
     private String originalTitle;
+    //TODO some problem with genre_ids in XML
     @JsonProperty("genre_ids")
     private List<Integer> genreIds = null;
     @JsonProperty("backdrop_path")

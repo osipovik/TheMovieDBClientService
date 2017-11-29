@@ -7,6 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -30,6 +31,13 @@ public class MovieController {
         MultiValueMap<String, String> paramMap = new LinkedMultiValueMap<>();
         params.keySet().forEach(key -> paramMap.put(key, Arrays.asList(params.get(key))));
         return movieService.getMovieList(paramMap);
+    }
+
+    @ResponseBody
+    @RequestMapping(value = ApiUrl.MOVIE_INFO_GET_BY_ID, method = RequestMethod.GET,
+            produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    public Serializable getMovieById(@PathVariable("movie_id") final int movieId) {
+        return movieService.getMovieById(movieId);
     }
 
 }

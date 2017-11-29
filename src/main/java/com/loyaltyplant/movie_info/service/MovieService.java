@@ -2,6 +2,8 @@ package com.loyaltyplant.movie_info.service;
 
 import com.loyaltyplant.movie_info.config.ApplicationConfig;
 import com.loyaltyplant.movie_info.model.response.MovieListResponse;
+import com.loyaltyplant.movie_info.model.response.MovieResponse;
+import com.loyaltyplant.movie_info.service.sender.RequestSenderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,12 +16,13 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.client.UnknownHttpStatusCodeException;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class MovieService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MovieService.class.getSimpleName());
+    private static final Logger LOG = LoggerFactory.getLogger(MovieService.class.getSimpleName());
 
     @Autowired
     private ApplicationConfig applicationConfig;
@@ -38,11 +41,36 @@ public class MovieService {
             response = restTemplate.getForEntity(builder.toUriString(), MovieListResponse.class);
             return response.getBody();
         } catch (HttpServerErrorException | HttpClientErrorException | UnknownHttpStatusCodeException e) {
-            LOGGER.error("send request error. Msg: {}, responseHeaders: {}, responseBody: {}",
+            LOG.error("send request error. Msg: {}, responseHeaders: {}, responseBody: {}",
                     e.getMessage(), e.getResponseHeaders(), e.getResponseBodyAsString());
-            LOGGER.error("Error", e);
+            LOG.error("Error", e);
         } catch (Exception e) {
-            LOGGER.error("Unexpected error", e);
+            LOG.error("Unexpected error", e);
+        }
+
+        return null;
+    }
+
+    public MovieResponse getMovieById(int movieId) {
+        RestTemplate restTemplate = new RestTemplate();
+        HttpEntity<MovieResponse> response = null;
+
+        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(applicationConfig.getBaseUrl());
+
+        builder.path("/movie/{movie_id}");
+        builder.queryParam("api_key", applicationConfig.getApiKey());
+        builder.uriComponents(builder.buildAndExpand(movieId));
+        LOG.info("result url: {}", builder.toUriString());
+
+        try {
+            response = restTemplate.getForEntity(builder.toUriString(), MovieResponse.class);
+            return response.getBody();
+        } catch (HttpServerErrorException | HttpClientErrorException | UnknownHttpStatusCodeException e) {
+            LOG.error("send request error. Msg: {}, responseHeaders: {}, responseBody: {}",
+                    e.getMessage(), e.getResponseHeaders(), e.getResponseBodyAsString());
+            LOG.error("Error", e);
+        } catch (Exception e) {
+            LOG.error("Unexpected error", e);
         }
 
         return null;
