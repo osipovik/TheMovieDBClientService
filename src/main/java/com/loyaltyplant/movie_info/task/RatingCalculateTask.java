@@ -35,7 +35,6 @@ public class RatingCalculateTask implements Runnable {
     private Double voteAverage = 0d;
     private LocalDateTime createdDateTime = LocalDateTime.now();
     private LocalDateTime lastStateUpdateDateTime = LocalDateTime.now();
-    private LocalDateTime calculatedDateTime = LocalDateTime.now();
 
     @Override
     public void run() {
@@ -57,31 +56,28 @@ public class RatingCalculateTask implements Runnable {
         builder.queryParam("api_key", apiKey);
         builder.queryParam("page", page);
         builder.uriComponents(builder.buildAndExpand(genreId));
-        LOG.info(builder.toUriString());
 
         try {
             //TODO нужен отдельный пул запросов, который будет конртолировать отправку не более 40 запросов за 10 секунд
             responseEntity = restTemplate.getForEntity(builder.toUriString(), MovieListResponse.class);
             MovieListResponse response = responseEntity.getBody();
-            LOG.info(response.toString());
 
             if (response.getPage() < response.getTotalPages()) {
+                response.getMovieModelList().forEach(movie -> voteSum += movie.getVoteAverage());
+
                 int percent = response.getPage() * 100 / response.getTotalPages();
                 LOG.info("percent = " + percent);
-                this.completedPercent = percent;
-
-                response.getMovieModelList().forEach(movie -> voteSum += movie.getVoteAverage());
+                completedPercent = percent;
+                lastStateUpdateDateTime = LocalDateTime.now();
 
                 Thread.sleep(250); //maximum 40 requests every 10 seconds
                 calculateRatingByGenreId(response.getPage()+1);
             } else {
-                this.completedPercent = 100;
-                this.voteAverage = this.voteSum / response.getTotalResult();
-                this.taskStatus = TaskStatus.COMPLETED;
-                this.calculatedDateTime = LocalDateTime.now();
+                completedPercent = 100;
+                voteAverage = voteSum / response.getTotalResult();
+                taskStatus = TaskStatus.COMPLETED;
+                lastStateUpdateDateTime = LocalDateTime.now();
             }
-
-            lastStateUpdateDateTime = LocalDateTime.now();
         } catch (HttpServerErrorException | HttpClientErrorException | UnknownHttpStatusCodeException e) {
             LOG.error("send request error. Msg: {}, responseHeaders: {}, responseBody: {}",
                     e.getMessage(), e.getResponseHeaders(), e.getResponseBodyAsString());
