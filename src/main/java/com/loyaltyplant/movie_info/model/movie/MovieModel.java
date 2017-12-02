@@ -8,8 +8,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.List;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @XmlRootElement
 @Getter @Setter
 @EqualsAndHashCode

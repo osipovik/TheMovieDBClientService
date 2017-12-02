@@ -3,7 +3,6 @@ package com.loyaltyplant.movie_info.service;
 import com.loyaltyplant.movie_info.config.ApplicationConfig;
 import com.loyaltyplant.movie_info.model.response.MovieListResponse;
 import com.loyaltyplant.movie_info.model.response.MovieResponse;
-import com.loyaltyplant.movie_info.service.sender.RequestSenderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,13 +15,10 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.client.UnknownHttpStatusCodeException;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @Service
 public class MovieService {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MovieService.class.getSimpleName());
+    private static final Logger LOG = LoggerFactory.getLogger(MovieService.class);
 
     @Autowired
     private ApplicationConfig applicationConfig;
@@ -32,7 +28,6 @@ public class MovieService {
         HttpEntity<MovieListResponse> response = null;
 
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(applicationConfig.getBaseUrl());
-
         builder.path("/discover/movie");
         builder.queryParam("api_key", applicationConfig.getApiKey());
         builder.queryParams(params);

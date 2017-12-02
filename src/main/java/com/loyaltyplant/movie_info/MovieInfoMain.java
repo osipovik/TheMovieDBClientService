@@ -1,12 +1,14 @@
 package com.loyaltyplant.movie_info;
 
-import org.springframework.boot.SpringApplication;
+import com.loyaltyplant.movie_info.config.ApplicationConfig;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 
 @SpringBootApplication
 public class MovieInfoMain {
 
     public static void main(String[] args) {
-        SpringApplication.run(MovieInfoMain.class, args);
+        new SpringApplicationBuilder(new Class<?>[] {ApplicationConfig.class})
+                .web(true).run(args);
     }
 }
