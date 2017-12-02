@@ -63,7 +63,7 @@ public class RatingCalculateTask implements Runnable {
             MovieListResponse response = responseEntity.getBody();
 
             if (response.getPage() < response.getTotalPages()) {
-                response.getMovieModelList().forEach(movie -> voteSum += movie.getVoteAverage());
+                response.getMovieList().forEach(movie -> voteSum += movie.getVoteAverage());
 
                 int percent = response.getPage() * 100 / response.getTotalPages();
                 LOG.info("percent = " + percent);

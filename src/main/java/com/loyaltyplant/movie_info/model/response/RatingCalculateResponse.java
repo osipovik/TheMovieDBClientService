@@ -10,10 +10,10 @@ import java.io.Serializable;
 
 @NoArgsConstructor
 @Setter @Getter
-@XmlRootElement
 @EqualsAndHashCode
 @ToString
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@XmlRootElement(name = "ratingCalculate")
 public class RatingCalculateResponse implements Serializable {
     private static final long serialVersionUID = 7051574042882683881L;
 
@@ -30,6 +30,5 @@ public class RatingCalculateResponse implements Serializable {
         createdDateTime = calculateTask.getCreatedDateTime().toString("yyyy-MM-dd HH:mm:ss");
         lastStateUpdateDateTime = calculateTask.getLastStateUpdateDateTime().toString("yyyy-MM-dd HH:mm:ss");
     }
-
 
 }
