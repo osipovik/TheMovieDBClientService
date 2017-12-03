@@ -23,6 +23,8 @@ import org.springframework.web.context.WebApplicationContext;
 
 import javax.servlet.ServletContext;
 
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.iterableWithSize;
 import static org.hamcrest.Matchers.startsWith;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -33,7 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {ApplicationConfig.class})
 @WebAppConfiguration
-public class IntegrationTest {
+public class AcceptTypeXmlIntegrationTest {
     private static final Logger LOG = LoggerFactory.getLogger(MovieControllerTest.class);
 
     @Autowired
@@ -56,39 +58,38 @@ public class IntegrationTest {
     }
 
     @Test
-    public void getMovieById_JSONAccept_Test() throws Exception {
-        mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_BY_ID, 346364).accept(MediaType.APPLICATION_JSON))
+    public void getMovieById_XMLAccept_Test() throws Exception {
+        mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_BY_ID, 346364).accept(MediaType.APPLICATION_XML))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(346364))
+                .andExpect(content().contentType(MediaType.APPLICATION_XML))
+                .andExpect(MockMvcResultMatchers.xpath("/movie/id").string("346364"))
                 .andDo(print())
                 .andReturn();
     }
 
     @Test
-    public void getMovieList_JSONAccept_Test() throws Exception {
-        mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_LIST).accept(MediaType.APPLICATION_JSON))
+    public void getMovieList_XMLAccept_Test() throws Exception {
+        mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_LIST).accept(MediaType.APPLICATION_XML))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.results").isArray())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.results", hasSize(20)))
+                .andExpect(content().contentType(MediaType.APPLICATION_XML))
+                .andExpect(MockMvcResultMatchers.xpath("/movieList/results/movie").nodeCount(20))
                 .andDo(print())
                 .andReturn();
     }
 
     @Test
-    public void getMovieList_JSONAccept_withQueryParams_Test() throws Exception {
+    public void getMovieList_XMLAccept_withQueryParams_Test() throws Exception {
         mockMvc.perform(
                     get(ApiUrl.MOVIE_INFO_GET_LIST)
-                            .accept(MediaType.APPLICATION_JSON)
+                            .accept(MediaType.APPLICATION_XML)
                             .param("page", "5")
                             .param("primary_release_year", "1989")
                 ).andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.results").isArray())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.results", hasSize(20)))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.page").value(5))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.results[0].release_date").value(startsWith("1989")))
+                .andExpect(content().contentType(MediaType.APPLICATION_XML))
+                .andExpect(MockMvcResultMatchers.xpath("/movieList/results/movie").nodeCount(20))
+                .andExpect(MockMvcResultMatchers.xpath("/movieList/page").number(5D))
+                .andExpect(MockMvcResultMatchers.xpath("/movieList/results/movie/releaseDate")
+                        .string(startsWith("1989")))
                 .andDo(print())
                 .andReturn();
     }
