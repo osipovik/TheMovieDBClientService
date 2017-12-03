@@ -28,6 +28,7 @@ import java.io.IOException;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -55,6 +56,7 @@ public class MovieControllerTest {
                 mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_BY_ID, 1).accept(MediaType.APPLICATION_JSON))
                         .andExpect(status().isOk())
                         .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+                        .andDo(print())
                         .andReturn();
 
         MovieResponse movieResponse = (MovieResponse)
@@ -64,7 +66,7 @@ public class MovieControllerTest {
     }
 
     @Test
-    public void getMovieList() throws Exception {
+    public void getMovieList_JSONAccept_Test() throws Exception {
         MovieListResponse movieList = (MovieListResponse) getFileContentAsObject(
                 "test_response/json/get_movie_list_response.json",
                 MovieListResponse.class);
@@ -76,6 +78,7 @@ public class MovieControllerTest {
         MvcResult mvcResult = mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_LIST).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andDo(print())
                 .andReturn();
 
         MovieListResponse movieListResponse = (MovieListResponse)
@@ -96,6 +99,7 @@ public class MovieControllerTest {
                 mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_BY_ID, 1).accept(MediaType.APPLICATION_XML))
                         .andExpect(status().isOk())
                         .andExpect(content().contentType(MediaType.APPLICATION_XML))
+                        .andDo(print())
                         .andReturn();
 
         MovieResponse movieResponse = (MovieResponse)
@@ -116,6 +120,7 @@ public class MovieControllerTest {
         MvcResult mvcResult = mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_LIST).accept(MediaType.APPLICATION_XML))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_XML))
+                .andDo(print())
                 .andReturn();
 
         MovieListResponse movieListResponse = (MovieListResponse)
