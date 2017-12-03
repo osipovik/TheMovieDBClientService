@@ -1,5 +1,6 @@
 package com.loyaltyplant.movie_info.model.response;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -12,10 +13,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.List;
 
-@XmlRootElement(name = "movieList")
 @Getter @Setter
 @EqualsAndHashCode
 @ToString
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@XmlRootElement(name = "movieList")
 public class MovieListResponse implements Serializable {
     private static final long serialVersionUID = -7416825925378729818L;
 
@@ -36,6 +38,7 @@ public class MovieListResponse implements Serializable {
     @Getter @Setter
     @EqualsAndHashCode
     @ToString
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     public static class Movie implements Serializable {
         private static final long serialVersionUID = -2340861871980417631L;
 

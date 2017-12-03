@@ -37,7 +37,8 @@ public class MovieResponse implements Serializable {
     @JsonProperty("original_title")
     private String originalTitle;
     private String overview;
-    private Float popularity;
+    private Double popularity;
+    @JsonProperty("poster_path")
     private String posterPath;
     @JsonProperty("production_companies")
     private List<ProductionCompany> productionCompanyList = null;
