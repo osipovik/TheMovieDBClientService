@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<movieList>
+    <results>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg</backdropPath>
+            <genreIds>
+                <genreId>18</genreId>
+                <genreId>14</genreId>
+                <genreId>27</genreId>
+                <genreId>53</genreId>
+            </genreIds>
+            <id>346364</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>It</originalTitle>
+            <overview>In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise.</overview>
+            <popularity>1011.696668</popularity>
+            <posterPath>/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg</posterPath>
+            <releaseDate>2017-09-05</releaseDate>
+            <title>It</title>
+            <video>false</video>
+            <voteAverage>7.3</voteAverage>
+            <voteCount>4111</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/5wNUJs23rT5rTBacNyf5h83AynM.jpg</backdropPath>
+            <genreIds>
+                <genreId>28</genreId>
+                <genreId>12</genreId>
+                <genreId>35</genreId>
+                <genreId>14</genreId>
+                <genreId>878</genreId>
+            </genreIds>
+            <id>284053</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Thor: Ragnarok</originalTitle>
+            <overview>Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.</overview>
+            <popularity>830.696128</popularity>
+            <posterPath>/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg</posterPath>
+            <releaseDate>2017-10-25</releaseDate>
+            <title>Thor: Ragnarok</title>
+            <video>false</video>
+            <voteAverage>7.5</voteAverage>
+            <voteCount>2165</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/o5T8rZxoWSBMYwjsUFUqTt6uMQB.jpg</backdropPath>
+            <genreIds>
+                <genreId>28</genreId>
+                <genreId>12</genreId>
+                <genreId>14</genreId>
+                <genreId>878</genreId>
+            </genreIds>
+            <id>141052</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Justice League</originalTitle>
+            <overview>Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry, and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth.</overview>
+            <popularity>708.819458</popularity>
+            <posterPath>/9rtrRGeRnL0JKtu9IMBWsmlmmZz.jpg</posterPath>
+            <releaseDate>2017-11-15</releaseDate>
+            <title>Justice League</title>
+            <video>false</video>
+            <voteAverage>6.8</voteAverage>
+            <voteCount>1228</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/eGx5OfOdvM0gkHdmkLe3hcJuEIT.jpg</backdropPath>
+            <genreIds>
+                <genreId>27</genreId>
+            </genreIds>
+            <id>440021</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Happy Death Day</originalTitle>
+            <overview>A college student relives the day of her murder over and over again as she tries to discover her killer's identity.</overview>
+            <popularity>593.931085</popularity>
+            <posterPath>/cTaEIUYTt52ooq9quVbAQ7NpGwo.jpg</posterPath>
+            <releaseDate>2017-10-12</releaseDate>
+            <title>Happy Death Day</title>
+            <video>false</video>
+            <voteAverage>6.4</voteAverage>
+            <voteCount>541</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/ytKpFaLMpFWnuSXStz1GHrtTt6R.jpg</backdropPath>
+            <genreIds>
+                <genreId>27</genreId>
+                <genreId>53</genreId>
+            </genreIds>
+            <id>298250</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Jigsaw</originalTitle>
+            <overview>Dead bodies begin to turn up all over the city, each meeting their demise in a variety of grisly ways. All investigations begin to point the finger at deceased killer John Kramer.</overview>
+            <popularity>565.719572</popularity>
+            <posterPath>/zUbUtxiTdEgWnkXY945gtYYqBZ1.jpg</posterPath>
+            <releaseDate>2017-10-20</releaseDate>
+            <title>Jigsaw</title>
+            <video>false</video>
+            <voteAverage>5.8</voteAverage>
+            <voteCount>345</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/2SEgJ0mHJ7TSdVDbkGU061tR33K.jpg</backdropPath>
+            <genreIds>
+                <genreId>18</genreId>
+                <genreId>53</genreId>
+                <genreId>28</genreId>
+                <genreId>878</genreId>
+            </genreIds>
+            <id>347882</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Sleight</originalTitle>
+            <overview>A young street magician is left to take care of his little sister after his mother's passing and turns to drug dealing in the Los Angeles party scene to keep a roof over their heads. When he gets into trouble with his supplier, his sister is kidnapped and he is forced to rely on both his sleight of hand and brilliant mind to save her.</overview>
+            <popularity>537.649456</popularity>
+            <posterPath>/wridRvGxDqGldhzAIh3IcZhHT5F.jpg</posterPath>
+            <releaseDate>2017-04-28</releaseDate>
+            <title>Sleight</title>
+            <video>false</video>
+            <voteAverage>5.5</voteAverage>
+            <voteCount>137</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/qLmdjn2fv0FV2Mh4NBzMArdA0Uu.jpg</backdropPath>
+            <genreIds>
+                <genreId>10751</genreId>
+                <genreId>16</genreId>
+                <genreId>12</genreId>
+                <genreId>35</genreId>
+            </genreIds>
+            <id>211672</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Minions</originalTitle>
+            <overview>Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.</overview>
+            <popularity>447.296368</popularity>
+            <posterPath>/q0R4crx2SehcEEQEkYObktdeFy.jpg</posterPath>
+            <releaseDate>2015-06-17</releaseDate>
+            <title>Minions</title>
+            <video>false</video>
+            <voteAverage>6.4</voteAverage>
+            <voteCount>5118</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/lMDyuHzBhx3zNAv48vYzmgcJCCD.jpg</backdropPath>
+            <genreIds>
+                <genreId>18</genreId>
+                <genreId>35</genreId>
+            </genreIds>
+            <id>419680</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Daddy's Home 2</originalTitle>
+            <overview>Brad and Dusty must deal with their intrusive fathers during the holidays.</overview>
+            <popularity>438.801372</popularity>
+            <posterPath>/rF2IoKL0IFmumEXQFUuB8LajTYP.jpg</posterPath>
+            <releaseDate>2017-11-09</releaseDate>
+            <title>Daddy's Home 2</title>
+            <video>false</video>
+            <voteAverage>5.5</voteAverage>
+            <voteCount>177</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/ulMscezy9YX0bhknvJbZoUgQxO5.jpg</backdropPath>
+            <genreIds>
+                <genreId>18</genreId>
+                <genreId>878</genreId>
+                <genreId>10752</genreId>
+            </genreIds>
+            <id>281338</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>War for the Planet of the Apes</originalTitle>
+            <overview>Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet.</overview>
+            <popularity>433.08877</popularity>
+            <posterPath>/3vYhLLxrTtZLysXtIWktmd57Snv.jpg</posterPath>
+            <releaseDate>2017-07-11</releaseDate>
+            <title>War for the Planet of the Apes</title>
+            <video>false</video>
+            <voteAverage>6.7</voteAverage>
+            <voteCount>2475</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/tvKcA4OFUiZkNeTJmmTkNqKHMMg.jpg</backdropPath>
+            <genreIds>
+                <genreId>80</genreId>
+                <genreId>18</genreId>
+                <genreId>9648</genreId>
+            </genreIds>
+            <id>392044</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Murder on the Orient Express</originalTitle>
+            <overview>Genius Belgian detective Hercule Poirot investigates the murder of an American tycoon aboard the Orient Express train.</overview>
+            <popularity>420.967187</popularity>
+            <posterPath>/iBlfxlw8qwtUS0R8YjIU7JtM6LM.jpg</posterPath>
+            <releaseDate>2017-11-03</releaseDate>
+            <title>Murder on the Orient Express</title>
+            <video>false</video>
+            <voteAverage>6.6</voteAverage>
+            <voteCount>335</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/vc8bCGjdVp0UbMNLzHnHSLRbBWQ.jpg</backdropPath>
+            <genreIds>
+                <genreId>28</genreId>
+                <genreId>12</genreId>
+                <genreId>35</genreId>
+                <genreId>878</genreId>
+            </genreIds>
+            <id>315635</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Spider-Man: Homecoming</originalTitle>
+            <overview>Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.</overview>
+            <popularity>409.377613</popularity>
+            <posterPath>/ApYhuwBWzl29Oxe9JJsgL7qILbD.jpg</posterPath>
+            <releaseDate>2017-07-05</releaseDate>
+            <title>Spider-Man: Homecoming</title>
+            <video>false</video>
+            <voteAverage>7.3</voteAverage>
+            <voteCount>4870</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/6aUWe0GSl69wMTSWWexsorMIvwU.jpg</backdropPath>
+            <genreIds>
+                <genreId>10751</genreId>
+                <genreId>14</genreId>
+                <genreId>10749</genreId>
+            </genreIds>
+            <id>321612</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Beauty and the Beast</originalTitle>
+            <overview>A live-action adaptation of Disney's version of the classic 'Beauty and the Beast' tale of a cursed prince and a beautiful young woman who helps him break the spell.</overview>
+            <popularity>322.310023</popularity>
+            <posterPath>/tWqifoYuwLETmmasnGHO7xBjEtt.jpg</posterPath>
+            <releaseDate>2017-03-16</releaseDate>
+            <title>Beauty and the Beast</title>
+            <video>false</video>
+            <voteAverage>6.8</voteAverage>
+            <voteCount>6111</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/854uDv6rzbwF82jOtFe931SMrRs.jpg</backdropPath>
+            <genreIds>
+                <genreId>18</genreId>
+                <genreId>27</genreId>
+                <genreId>9648</genreId>
+                <genreId>53</genreId>
+            </genreIds>
+            <id>399057</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>The Killing of a Sacred Deer</originalTitle>
+            <overview>A teenager's attempts to bring a brilliant surgeon into his dysfunctional family take an unexpected turn.</overview>
+            <popularity>319.815886</popularity>
+            <posterPath>/e4DGlsc9g0h5AyoyvvAuIRnofN7.jpg</posterPath>
+            <releaseDate>2017-10-20</releaseDate>
+            <title>The Killing of a Sacred Deer</title>
+            <video>false</video>
+            <voteAverage>6.0</voteAverage>
+            <voteCount>84</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/2BXd0t9JdVqCp9sKf6kzMkr7QjB.jpg</backdropPath>
+            <genreIds>
+                <genreId>12</genreId>
+                <genreId>10751</genreId>
+                <genreId>16</genreId>
+                <genreId>28</genreId>
+                <genreId>35</genreId>
+            </genreIds>
+            <id>177572</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Big Hero 6</originalTitle>
+            <overview>The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.</overview>
+            <popularity>303.444167</popularity>
+            <posterPath>/9gLu47Zw5ertuFTZaxXOvNfy78T.jpg</posterPath>
+            <releaseDate>2014-10-24</releaseDate>
+            <title>Big Hero 6</title>
+            <video>false</video>
+            <voteAverage>7.8</voteAverage>
+            <voteCount>6675</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/umC04Cozevu8nn3JTDJ1pc7PVTn.jpg</backdropPath>
+            <genreIds>
+                <genreId>28</genreId>
+                <genreId>53</genreId>
+            </genreIds>
+            <id>245891</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>John Wick</originalTitle>
+            <overview>Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him.</overview>
+            <popularity>296.609542</popularity>
+            <posterPath>/5vHssUeVe25bMrof1HyaPyWgaP.jpg</posterPath>
+            <releaseDate>2014-10-22</releaseDate>
+            <title>John Wick</title>
+            <video>false</video>
+            <voteAverage>7.0</voteAverage>
+            <voteCount>5917</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/o6OhxtsgMurL4h68Uqei0aSPMNr.jpg</backdropPath>
+            <genreIds>
+                <genreId>12</genreId>
+                <genreId>878</genreId>
+                <genreId>28</genreId>
+            </genreIds>
+            <id>339964</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Valerian and the City of a Thousand Planets</originalTitle>
+            <overview>In the 28th century, Valerian and Laureline are special operatives charged with keeping order throughout the human territories. On assignment from the Minister of Defense, the two undertake a mission to Alpha, an ever-expanding metropolis where species from across the universe have converged over centuries to share knowledge, intelligence, and cultures. At the center of Alpha is a mysterious dark force which threatens the peaceful existence of the City of a Thousand Planets, and Valerian and Laureline must race to identify the menace and safeguard not just Alpha, but the future of the universe.</overview>
+            <popularity>279.579364</popularity>
+            <posterPath>/jfIpMh79fGRqYJ6PwZLCntzgxlF.jpg</posterPath>
+            <releaseDate>2017-07-20</releaseDate>
+            <title>Valerian and the City of a Thousand Planets</title>
+            <video>false</video>
+            <voteAverage>6.7</voteAverage>
+            <voteCount>1348</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/6iUNJZymJBMXXriQyFZfLAKnjO6.jpg</backdropPath>
+            <genreIds>
+                <genreId>28</genreId>
+                <genreId>12</genreId>
+                <genreId>14</genreId>
+            </genreIds>
+            <id>297762</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Wonder Woman</originalTitle>
+            <overview>An Amazon princess comes to the world of Man to become the greatest of the female superheroes.</overview>
+            <popularity>275.56427</popularity>
+            <posterPath>/imekS7f1OuHyUP2LAiTEM0zBzUz.jpg</posterPath>
+            <releaseDate>2017-05-30</releaseDate>
+            <title>Wonder Woman</title>
+            <video>false</video>
+            <voteAverage>7.2</voteAverage>
+            <voteCount>6144</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/lj3wkYkJGkfmDfXkKrVarSJpFD4.jpg</backdropPath>
+            <genreIds>
+                <genreId>53</genreId>
+                <genreId>9648</genreId>
+                <genreId>28</genreId>
+            </genreIds>
+            <id>341013</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Atomic Blonde</originalTitle>
+            <overview>An undercover MI6 agent is sent to Berlin during the Cold War to investigate the murder of a fellow agent and recover a missing list of double agents.</overview>
+            <popularity>248.960829</popularity>
+            <posterPath>/kV9R5h0Yct1kR8Hf8sJ1nX0Vz4x.jpg</posterPath>
+            <releaseDate>2017-07-26</releaseDate>
+            <title>Atomic Blonde</title>
+            <video>false</video>
+            <voteAverage>6.0</voteAverage>
+            <voteCount>1376</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/egHeYqgrutiRAzGGWTKp3zqUw0j.jpg</backdropPath>
+            <genreIds>
+                <genreId>35</genreId>
+                <genreId>80</genreId>
+                <genreId>18</genreId>
+                <genreId>28</genreId>
+                <genreId>9648</genreId>
+            </genreIds>
+            <id>395458</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>Suburbicon</originalTitle>
+            <overview>A crime mystery set in the quiet family town of Suburbicon during the 1950s, where the best and worst of humanity is hilariously reflected through the deeds of seemingly ordinary people. When a home invasion turns deadly, a picture-perfect family turns to blackmail, revenge, and murder.</overview>
+            <popularity>232.800434</popularity>
+            <posterPath>/a3IHgSwO5jWPLcGjKqbQ7pxVGkq.jpg</posterPath>
+            <releaseDate>2017-10-26</releaseDate>
+            <title>Suburbicon</title>
+            <video>false</video>
+            <voteAverage>4.4</voteAverage>
+            <voteCount>65</voteCount>
+        </movie>
+        <movie>
+            <adult>false</adult>
+            <backdropPath>/iJ5dkwIHQnq8dfmwSLh7dpETNhi.jpg</backdropPath>
+            <genreIds>
+                <genreId>35</genreId>
+                <genreId>16</genreId>
+                <genreId>12</genreId>
+            </genreIds>
+            <id>355547</id>
+            <originalLanguage>en</originalLanguage>
+            <originalTitle>The Star</originalTitle>
+            <overview>A small but brave donkey and his animal friends become the unsung heroes of the greatest story ever told, the first Christmas.</overview>
+            <popularity>210.022982</popularity>
+            <posterPath>/tEbDvivUfsCupngKIfMJJ725eAD.jpg</posterPath>
+            <releaseDate>2017-11-15</releaseDate>
+            <title>The Star</title>
+            <video>false</video>
+            <voteAverage>4.1</voteAverage>
+            <voteCount>33</voteCount>
+        </movie>
+    </results>
+    <page>1</page>
+    <totalPages>16783</totalPages>
+    <totalResult>335645</totalResult>
+</movieList>

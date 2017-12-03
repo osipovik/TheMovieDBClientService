@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<movie>
+    <adult>false</adult>
+    <backdropPath>/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg</backdropPath>
+    <budget>35000000</budget>
+    <genres>
+        <genre>
+            <id>18</id>
+            <name>Drama</name>
+        </genre>
+        <genre>
+            <id>14</id>
+            <name>Fantasy</name>
+        </genre>
+        <genre>
+            <id>27</id>
+            <name>Horror</name>
+        </genre>
+        <genre>
+            <id>53</id>
+            <name>Thriller</name>
+        </genre>
+    </genres>
+    <homepage>http://itthemovie.com/</homepage>
+    <id>346364</id>
+    <imdbId>tt1396484</imdbId>
+    <originalLanguage>en</originalLanguage>
+    <originalTitle>It</originalTitle>
+    <overview>In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise.</overview>
+    <popularity>947.2744</popularity>
+    <productionCompanies>
+        <productionCompany>
+            <id>12</id>
+            <name>New Line Cinema</name>
+        </productionCompany>
+        <productionCompany>
+            <id>829</id>
+            <name>Vertigo Entertainment</name>
+        </productionCompany>
+        <productionCompany>
+            <id>2723</id>
+            <name>Lin Pictures</name>
+        </productionCompany>
+        <productionCompany>
+            <id>41624</id>
+            <name>RatPac-Dune Entertainment</name>
+        </productionCompany>
+        <productionCompany>
+            <id>87671</id>
+            <name>KatzSmith Productions</name>
+        </productionCompany>
+    </productionCompanies>
+    <ProductionCountries>
+        <ProductionCountry>
+            <iso>US</iso>
+            <name>United States of America</name>
+        </ProductionCountry>
+    </ProductionCountries>
+    <releaseDate>2017-09-05</releaseDate>
+    <revenue>555575232</revenue>
+    <runtime>135</runtime>
+    <SpokenLanguages>
+        <SpokenLanguage>
+            <iso>da</iso>
+            <name>Dansk</name>
+        </SpokenLanguage>
+    </SpokenLanguages>
+    <status>Released</status>
+    <tagline>Your fears are unleashed</tagline>
+    <title>It</title>
+    <video>false</video>
+    <voteAverage>7.2</voteAverage>
+    <voteCount>4152</voteCount>
+</movie>
