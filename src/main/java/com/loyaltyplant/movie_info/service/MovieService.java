@@ -14,6 +14,10 @@ import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.client.UnknownHttpStatusCodeException;
 import org.springframework.web.util.UriComponentsBuilder;
+import java.util.Arrays;
+import java.util.Map;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 
 @Service
 public class MovieService {
@@ -23,14 +27,17 @@ public class MovieService {
     @Autowired
     private ApplicationConfig applicationConfig;
 
-    public MovieListResponse getMovieList(MultiValueMap params) {
+    public MovieListResponse getMovieList(Map<String, String[]> params) {
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity<MovieListResponse> response = null;
+
+        MultiValueMap<String, String> paramMap = new LinkedMultiValueMap<>();
+        params.keySet().forEach(key -> paramMap.put(key, Arrays.asList(params.get(key))));
 
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(applicationConfig.getBaseUrl());
         builder.path("/discover/movie");
         builder.queryParam("api_key", applicationConfig.getApiKey());
-        builder.queryParams(params);
+        builder.queryParams(paramMap);
 
         try {
             response = restTemplate.getForEntity(builder.toUriString(), MovieListResponse.class);

@@ -73,7 +73,7 @@ public class MovieControllerTest {
 
 
         HttpServletRequest request = new MockHttpServletRequest();
-        given(movieController.getMovieList(request)).willReturn(movieList);
+        given(movieService.getMovieList(request.getParameterMap())).willReturn(movieList);
 
         MvcResult mvcResult = mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_LIST).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
@@ -93,7 +93,7 @@ public class MovieControllerTest {
                 "test_response/xml/get_movie_by_id_response.xml",
                 MovieResponse.class);
 
-        given(movieController.getMovieById(1)).willReturn(movie);
+        given(movieService.getMovieById(1)).willReturn(movie);
 
         MvcResult mvcResult =
                 mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_BY_ID, 1).accept(MediaType.APPLICATION_XML))
@@ -115,7 +115,7 @@ public class MovieControllerTest {
                 MovieListResponse.class);
 
         HttpServletRequest request = new MockHttpServletRequest();
-        given(movieController.getMovieList(request)).willReturn(movieList);
+        given(movieService.getMovieList(request.getParameterMap())).willReturn(movieList);
 
         MvcResult mvcResult = mockMvc.perform(get(ApiUrl.MOVIE_INFO_GET_LIST).accept(MediaType.APPLICATION_XML))
                 .andExpect(status().isOk())
